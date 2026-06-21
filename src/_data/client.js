@@ -76,6 +76,7 @@ module.exports = {
   serviceImages: [
     'assets/images/kitchen_island.jpg',
     'assets/images/full_bath.jpg',
+    'assets/images/bathroom_shower.jpg',
     'assets/images/bathroom_vanity.jpg',
     'assets/images/living_room.JPG',
   ],
