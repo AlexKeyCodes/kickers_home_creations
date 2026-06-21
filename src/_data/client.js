@@ -48,22 +48,35 @@ module.exports = {
     googleBusiness: '',
   },
 
-  // Service Cards for Info Component
-  menuCards: [
+  // Services (Services section)
+  services: [
     {
-      image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'KITCHENS & BATHS',
-      title: 'REMODELING'
+      icon: 'kitchen',
+      title: 'Kitchen Remodel',
+      description: 'Custom cabinets, countertops, tile, and lighting — full kitchen transformations built to last.',
     },
     {
-      image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'ADDITIONS',
-      title: 'NEW BUILDS'
+      icon: 'bath',
+      title: 'Bath Remodel',
+      description: 'Tubs, showers, vanities, and tile work that turn dated bathrooms into relaxing retreats.',
     },
     {
-      image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'CUSTOM',
-      title: 'CARPENTRY'
-    }
+      icon: 'handyman',
+      title: 'Handyman',
+      description: 'Repairs, installs, and the small projects on your list — done right the first time.',
+    },
+    {
+      icon: 'punchlist',
+      title: 'Real Estate Punch List',
+      description: 'Fast, reliable pre-sale and post-inspection fixes to get properties market-ready.',
+    },
+  ],
+
+  // Images for the Services carousel (vertical/portrait crop)
+  serviceImages: [
+    'assets/images/kitchen_island.jpg',
+    'assets/images/full_bath.jpg',
+    'assets/images/bathroom_vanity.jpg',
+    'assets/images/living_room.JPG',
   ],
 }

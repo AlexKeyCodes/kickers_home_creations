@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['"DM Serif Display"', 'Georgia', 'serif'],
+      },
       colors: {
         brand: {
           green: '#15514A',

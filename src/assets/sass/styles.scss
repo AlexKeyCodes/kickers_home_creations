@@ -7,6 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* All headings use DM Serif Display */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.heading');
+  }
+}
+
 /* Hero section that accounts for absolute header */
 .hero-with-header {
   min-height: 100vh;

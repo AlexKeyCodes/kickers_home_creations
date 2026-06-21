@@ -2,6 +2,7 @@ import { initFooter } from './footer.js';
 import { initHeader } from './header.js';
 import { initGallery } from './gallery.js';
 import { initHero } from './hero.js';
+import { initServicesCarousel } from './services-carousel.js';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Initialize all modules
@@ -9,4 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
   initHeader();
   initGallery();
   initHero();
+  initServicesCarousel();
 });
