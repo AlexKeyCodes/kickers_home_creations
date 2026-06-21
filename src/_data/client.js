@@ -5,8 +5,8 @@ module.exports = {
   cuisine: 'Home Construction & Remodeling',
 
   // Page Content
-  hero_title: 'Building & Remodeling Low Country Homes',
-  hero_subtitle: 'Quality craftsmanship, dependable service, and a commitment to bringing your home vision to life.',
+  hero_title: 'Kitchen & Bath Remodeling Done Right',
+  hero_subtitle: 'Charleston-area kitchen and bathroom remodels built on quality craftsmanship, honest pricing, and dependable service.',
   about_title: 'About Us',
   about_desc_one: 'Kickers Low Country Home Creations LLC is a small, locally owned construction company serving Charleston, South Carolina and the surrounding Low Country. We specialize in home builds, renovations, and remodeling with a focus on quality and customer satisfaction.',
   about_desc_two: 'From kitchen and bathroom remodels to additions and custom carpentry, our experienced team handles every project with care and attention to detail. We pride ourselves on clear communication, honest pricing, and craftsmanship that stands the test of time.',

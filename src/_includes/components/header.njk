@@ -21,8 +21,14 @@
       <a href="#faq" class="text-lg text-white hover:text-brand-gold transition-colors">FAQ</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
-      <a href="tel:{{ client.phone | replace(r/[^0-9+]/g, '') }}" class="text-lg font-semibold text-white hover:text-brand-gold transition-colors whitespace-nowrap">{{ client.phone }}</a>
-      <a href="#contact" class="rounded-md bg-brand-gold px-4 py-3 text-base font-semibold text-brand-dark shadow-sm hover:bg-brand-gold-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold">Get a Quote</a>
+      <span class="flex items-center gap-2 text-lg font-semibold text-white whitespace-nowrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-5">
+          <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        {{ client.address.city }}, {{ client.address.state }}
+      </span>
+      <a href="#contact" class="rounded-md bg-brand-gold px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-brand-gold-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold">Get a Quote</a>
     </div>
   </nav>
   <el-dialog>
@@ -50,8 +56,14 @@
                 <a href="#faq" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">FAQ</a>
               </div>
               <div class="py-6 space-y-3">
-                <a href="tel:{{ client.phone | replace(r/[^0-9+]/g, '') }}" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-brand-green hover:bg-gray-50 text-center">{{ client.phone }}</a>
-                <a href="#contact" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-brand-dark bg-brand-gold hover:bg-brand-gold-dark text-center">Get a Quote</a>
+                <span class="-mx-3 flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-lg font-semibold text-brand-green text-center">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-5">
+                    <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  {{ client.address.city }}, {{ client.address.state }}
+                </span>
+                <a href="#contact" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-white bg-brand-gold hover:bg-brand-gold-dark text-center">Get a Quote</a>
               </div>
             </div>
           </div>
