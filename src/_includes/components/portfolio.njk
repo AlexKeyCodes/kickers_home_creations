@@ -1,30 +1,31 @@
-<!-- Portfolio / Before & After Section -->
+<!-- Portfolio / Project Progression Section -->
 <section id="portfolio" class="bg-brand-cream/50 py-20 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <p class="text-base font-semibold uppercase tracking-widest text-brand-gold">Our Work</p>
-      <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-dark sm:text-4xl">Before &amp; After</h2>
-      <p class="mt-4 text-lg text-gray-600">A few recent transformations. Placeholder projects — swap in real before/after photos of completed work.</p>
+      <p class="text-sm font-semibold uppercase tracking-widest text-brand-gold">{{ client.projectSpotlight.eyebrow }}</p>
+      <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-dark sm:text-4xl">{{ client.projectSpotlight.title }}</h2>
+      <p class="mt-4 text-lg text-gray-600">{{ client.projectSpotlight.description }}</p>
     </div>
 
-    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 lg:max-w-none lg:grid-cols-3">
-      {% for i in range(0, 3) %}
-        <div class="overflow-hidden rounded-2xl bg-white shadow-sm">
-          <div class="grid grid-cols-2">
-            <div class="relative flex aspect-square items-center justify-center bg-gray-300">
-              <span class="absolute left-2 top-2 rounded bg-brand-dark/80 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-white">Before</span>
-              <span class="text-sm text-gray-500">Image</span>
-            </div>
-            <div class="relative flex aspect-square items-center justify-center bg-gray-200">
-              <span class="absolute left-2 top-2 rounded bg-brand-green px-2 py-1 text-xs font-semibold uppercase tracking-wide text-white">After</span>
-              <span class="text-sm text-gray-500">Image</span>
-            </div>
+    <div class="mx-auto mt-16 grid max-w-md grid-cols-1 gap-10 sm:max-w-none sm:grid-cols-3 sm:gap-8">
+      {% for step in client.projectSpotlight.steps %}
+        <figure class="relative">
+          <div class="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
+            <img src="{{ step.image }}" alt="{{ step.stage }} stage of fireplace feature wall by {{ client.restaurantName }}" class="size-full object-cover" />
+            <span class="absolute left-4 top-4 flex size-9 items-center justify-center rounded-full bg-brand-gold text-sm font-semibold text-white shadow">{{ loop.index }}</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-brand-dark">Project {{ i + 1 }}</h3>
-            <p class="mt-2 text-sm text-gray-600">Placeholder description of the project scope and outcome.</p>
-          </div>
-        </div>
+
+          {% if not loop.last %}
+            <div class="absolute -right-6 top-[42%] z-10 hidden size-9 items-center justify-center rounded-full bg-brand-green text-white shadow-md sm:flex">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="size-4"><path d="m9 18 6-6-6-6" /></svg>
+            </div>
+          {% endif %}
+
+          <figcaption class="mt-5">
+            <h3 class="text-xl font-semibold text-brand-dark">{{ step.stage }}</h3>
+            <p class="mt-1 text-base text-gray-600">{{ step.caption }}</p>
+          </figcaption>
+        </figure>
       {% endfor %}
     </div>
   </div>

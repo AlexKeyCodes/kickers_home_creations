@@ -75,9 +75,38 @@ module.exports = {
   // Images for the Services carousel (vertical/portrait crop)
   serviceImages: [
     'assets/images/kitchen_island.jpg',
+    'assets/images/kitchen_island2.jpg',
     'assets/images/full_bath.jpg',
-    'assets/images/bathroom_shower.jpg',
+    'assets/images/full_bath2.jpg',
+    'assets/images/full_bath3.jpg',
+    'assets/images/full_bath4.jpg',
+    'assets/images/bathroom_tub.jpg',
     'assets/images/bathroom_vanity.jpg',
-    'assets/images/living_room.JPG',
+    'assets/images/bathroom_tile.jpg',
+    'assets/images/bathroom_tile2.jpg',
   ],
+
+  // Project progression spotlight (Portfolio section)
+  projectSpotlight: {
+    eyebrow: 'Project Spotlight',
+    title: 'From Framing to Finished',
+    description: 'Follow one of our custom fireplace feature walls from rough framing all the way to the finished marble surround.',
+    steps: [
+      {
+        image: 'assets/images/living_room1.jpg',
+        stage: 'Framing',
+        caption: 'Custom built-in framing for the new fireplace and media wall.',
+      },
+      {
+        image: 'assets/images/living_room2.jpg',
+        stage: 'Tile Prep',
+        caption: 'Backerboard installed and the firebox opening framed out.',
+      },
+      {
+        image: 'assets/images/living_room3.jpg',
+        stage: 'Finished',
+        caption: 'Floor-to-ceiling marble surround with a linear fireplace and mounted TV.',
+      },
+    ],
+  },
 }
