@@ -1,78 +1,69 @@
 module.exports = {
-  // Basic Restaurant Information
-  name: 'Test Restaurant',
-  restaurantName: 'Test Restaurant', // Full display name
-  cuisine: 'American Cuisine',
+  // Basic Business Information
+  name: 'Kickers Low Country Home Creations',
+  restaurantName: 'Kickers Low Country Home Creations LLC', // Full display name
+  cuisine: 'Home Construction & Remodeling',
 
   // Page Content
-  hero_title: 'Experience Authentic Restaurant Cuisine',
-  hero_subtitle: 'Fresh ingredients, skilled chefs, and an unforgettable dining experience.',
-  about_title: 'About Title',
-  about_desc_one: 'A template restaurant for testing purposes. Features a variety of delicious dishes made with fresh ingredients and excellent service.',
-  about_desc_two: 'Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.',
-  about_desc_three: 'Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.',
+  hero_title: 'Building & Remodeling Low Country Homes',
+  hero_subtitle: 'Quality craftsmanship, dependable service, and a commitment to bringing your home vision to life.',
+  about_title: 'About Us',
+  about_desc_one: 'Kickers Low Country Home Creations LLC is a small, locally owned construction company serving Charleston, South Carolina and the surrounding Low Country. We specialize in home builds, renovations, and remodeling with a focus on quality and customer satisfaction.',
+  about_desc_two: 'From kitchen and bathroom remodels to additions and custom carpentry, our experienced team handles every project with care and attention to detail. We pride ourselves on clear communication, honest pricing, and craftsmanship that stands the test of time.',
+  about_desc_three: 'Whether you are updating a single room or building something entirely new, we work closely with you from the first consultation to the final walkthrough to make sure the finished result is exactly what you imagined.',
 
   // Contact Information
   address: {
-    street: '1234 Testing Ln',
-    city: 'Test City',
-    state: 'TX',
-    zip: '12345',
+    street: '',
+    city: 'Charleston',
+    state: 'SC',
+    zip: '',
   },
-  phone: '(555) 123-4567',
-  email: 'info@testrestaurant.com',
-  domain: 'https://testrestaurant.com',
+  phone: '(608) 346-3448',
+  email: 'kickerservices@outlook.com',
+  domain: 'https://kickershomecreations.com',
 
   // Business Hours
   hours: {
     schedule: [
-      { day: 'Monday', lunch: '11:30am - 2:00pm', dinner: '3:00pm - 8:45pm' },
-      {
-        day: 'Tuesday - Thursday',
-        lunch: '11:30am - 2:00pm',
-        dinner: '3:00pm - 8:30pm',
-      },
-      {
-        day: 'Friday - Saturday',
-        lunch: '11:30am - 2:00pm',
-        dinner: '3:00pm - 8:45pm',
-      },
-      { day: 'Sunday', lunch: '11:30am - 2:00pm', dinner: '3:00pm - 8:15pm' },
+      { day: 'Monday - Friday', lunch: '7:00am - 5:00pm', dinner: '' },
+      { day: 'Saturday', lunch: 'By Appointment', dinner: '' },
+      { day: 'Sunday', lunch: 'Closed', dinner: '' },
     ],
   },
 
 
   // Location & Maps
-  googleMapsUrl: 'https://maps.google.com/test-location',
+  googleMapsUrl: 'https://maps.google.com/?q=Charleston+South+Carolina',
 
   // System Integration IDs
   id: '1119',
 
   // Social Media (placeholders for future use)
   socialMedia: {
-    facebook: 'test.com',
-    instagram: 'test.com',
-    twitter: 'test.com',
-    yelp: 'test.com',
-    googleBusiness: 'test.com',
+    facebook: '',
+    instagram: '',
+    twitter: '',
+    yelp: '',
+    googleBusiness: '',
   },
 
-  // Menu Cards for Info Component
+  // Service Cards for Info Component
   menuCards: [
     {
       image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'LUNCH & DINNER',
-      title: 'ALL DAY'
+      pretitle: 'KITCHENS & BATHS',
+      title: 'REMODELING'
     },
     {
       image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'LUNCH',
-      title: 'PRE-FIXE'
+      pretitle: 'ADDITIONS',
+      title: 'NEW BUILDS'
     },
     {
       image: 'assets/images/restaurant-gallery-1000x1000.jpg',
-      pretitle: 'EVENTS',
-      title: 'PARTY MENUS'
+      pretitle: 'CUSTOM',
+      title: 'CARPENTRY'
     }
   ],
 }

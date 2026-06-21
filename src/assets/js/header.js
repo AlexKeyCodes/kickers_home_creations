@@ -57,9 +57,9 @@ export function initHeader() {
   if (header) {
     function handleScroll() {
       if (window.scrollY > 0) {
-        header.classList.add('bg-secondary-700');
+        header.classList.add('shadow-lg');
       } else {
-        header.classList.remove('bg-secondary-700');
+        header.classList.remove('shadow-lg');
       }
     }
 

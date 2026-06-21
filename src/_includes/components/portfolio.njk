@@ -1,0 +1,31 @@
+<!-- Portfolio / Before & After Section -->
+<section id="portfolio" class="bg-brand-cream/50 py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-base font-semibold uppercase tracking-widest text-brand-gold">Our Work</p>
+      <h2 class="mt-3 text-3xl font-semibold tracking-tight text-brand-dark sm:text-4xl">Before &amp; After</h2>
+      <p class="mt-4 text-lg text-gray-600">A few recent transformations. Placeholder projects — swap in real before/after photos of completed work.</p>
+    </div>
+
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 lg:max-w-none lg:grid-cols-3">
+      {% for i in range(0, 3) %}
+        <div class="overflow-hidden rounded-2xl bg-white shadow-sm">
+          <div class="grid grid-cols-2">
+            <div class="relative flex aspect-square items-center justify-center bg-gray-300">
+              <span class="absolute left-2 top-2 rounded bg-brand-dark/80 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-white">Before</span>
+              <span class="text-sm text-gray-500">Image</span>
+            </div>
+            <div class="relative flex aspect-square items-center justify-center bg-gray-200">
+              <span class="absolute left-2 top-2 rounded bg-brand-green px-2 py-1 text-xs font-semibold uppercase tracking-wide text-white">After</span>
+              <span class="text-sm text-gray-500">Image</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-brand-dark">Project {{ i + 1 }}</h3>
+            <p class="mt-2 text-sm text-gray-600">Placeholder description of the project scope and outcome.</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

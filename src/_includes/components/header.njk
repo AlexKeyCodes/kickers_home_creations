@@ -1,9 +1,9 @@
-<header id="main-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
-  <nav aria-label="Global" class="flex items-center justify-between p-4">
+<header id="main-header" class="fixed inset-x-0 top-0 z-50 bg-brand-green transition-shadow duration-300">
+  <nav aria-label="Global" class="flex items-center justify-between px-6 py-3">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">{{ client.restaurantName }}</span>
-        <img src="assets/images/logo.png" alt="{{ client.restaurantName }} Logo" class="h-16 w-auto" />
+        <img src="assets/images/kickers-logo-wordmark-white.svg" alt="{{ client.restaurantName }} Logo" class="h-14 w-auto" />
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -14,15 +14,15 @@
         </svg>
       </button>
     </div>
-    <div class="hidden lg:flex lg:gap-x-12">
-      <a href="#about" class="text-lg text-white hover:underline">About</a>
-      <a href="/menus/" class="text-lg text-white hover:underline">Menu</a>
-      <a href="#gallery" class="text-lg text-white hover:underline">Gallery</a>
-      <a href="#contact" class="text-lg text-white hover:underline">Contact</a>
+    <div class="hidden lg:flex lg:gap-x-10">
+      <a href="#services" class="text-lg text-white hover:text-brand-gold transition-colors">Services</a>
+      <a href="#portfolio" class="text-lg text-white hover:text-brand-gold transition-colors">Portfolio</a>
+      <a href="#testimonials" class="text-lg text-white hover:text-brand-gold transition-colors">Reviews</a>
+      <a href="#faq" class="text-lg text-white hover:text-brand-gold transition-colors">FAQ</a>
     </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-3">
-      <a href="http://88restaurants.com/{{ client.id }}/online_orders/new" class="rounded-md bg-primary-500 px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500">Order Online</a>
-      <a href="https://88restaurants.com/{{ client.id }}/reservations/restaurants/booking_details" class="rounded-md bg-primary-500 px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500">Reserve Online</a>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
+      <a href="tel:{{ client.phone | replace(r/[^0-9+]/g, '') }}" class="text-lg font-semibold text-white hover:text-brand-gold transition-colors whitespace-nowrap">{{ client.phone }}</a>
+      <a href="#contact" class="rounded-md bg-brand-gold px-4 py-3 text-base font-semibold text-brand-dark shadow-sm hover:bg-brand-gold-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold">Get a Quote</a>
     </div>
   </nav>
   <el-dialog>
@@ -32,7 +32,7 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">{{ client.restaurantName }}</span>
-              <img src="assets/images/logo.png" alt="{{ client.restaurantName }} Logo" class="h-16 w-auto" />
+              <img src="assets/images/kickers-logo-wordmark.svg" alt="{{ client.restaurantName }} Logo" class="h-12 w-auto" />
             </a>
             <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
               <span class="sr-only">Close menu</span>
@@ -44,14 +44,14 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">About</a>
-                <a href="/menus/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Menu</a>
-                <a href="#gallery" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Gallery</a>
-                <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Contact</a>
+                <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Services</a>
+                <a href="#portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Portfolio</a>
+                <a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Reviews</a>
+                <a href="#faq" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">FAQ</a>
               </div>
-              <div class="py-6 space-y-2">
-                <a href="http://88restaurants.com/{{ client.id }}/online_orders/new" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-white bg-primary-500 hover:bg-primary-600 text-center">Order Online</a>
-                <a href="https://88restaurants.com/{{ client.id }}/reservations/restaurants/booking_details" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-white bg-primary-500 hover:bg-primary-600 text-center">Reserve Online</a>
+              <div class="py-6 space-y-3">
+                <a href="tel:{{ client.phone | replace(r/[^0-9+]/g, '') }}" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-brand-green hover:bg-gray-50 text-center">{{ client.phone }}</a>
+                <a href="#contact" class="-mx-3 block rounded-lg px-4 py-3 text-lg font-semibold text-brand-dark bg-brand-gold hover:bg-brand-gold-dark text-center">Get a Quote</a>
               </div>
             </div>
           </div>
@@ -60,4 +60,3 @@
     </dialog>
   </el-dialog>
 </header>
-

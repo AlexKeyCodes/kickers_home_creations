@@ -1,0 +1,10 @@
+<svg viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <text x="280" y="92" text-anchor="middle" font-size="58" font-weight="bold" fill="#FFFFFF" letter-spacing="1">KICKER'S</text>
+
+  <!-- accent rule with center diamond -->
+  <line x1="120" y1="112" x2="262" y2="112" stroke="#C2913F" stroke-width="2"/>
+  <line x1="298" y1="112" x2="440" y2="112" stroke="#C2913F" stroke-width="2"/>
+  <rect x="274" y="106" width="12" height="12" fill="#C2913F" transform="rotate(45 280 112)"/>
+
+  <text x="280" y="142" text-anchor="middle" font-size="22" letter-spacing="4" fill="#E9E4D8">LOW COUNTRY HOME CREATIONS</text>
+</svg>

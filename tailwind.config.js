@@ -4,6 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          green: '#15514A',
+          'green-dark': '#103F39',
+          'green-light': '#1C6359',
+          gold: '#C2913F',
+          'gold-dark': '#A87A2E',
+          cream: '#F5F1E8',
+          dark: '#2B2B2B',
+        },
         primary: {
           50: '#FFF1F4',
           100: '#FFE4E8',
