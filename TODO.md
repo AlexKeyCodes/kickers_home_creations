@@ -11,6 +11,9 @@ Outstanding work for kickershomecreations.com. Organized by priority.
 - [ ] **Replace placeholder testimonials** — `src/_includes/components/testimonials.njk`
       ships literal "Placeholder testimonial…" / "Client Name 1/2/3". Swap in
       real client quotes and names, or hide the section until they exist.
+- [ ] **Replace placeholder FAQ items** — `src/_includes/components/faq.njk`
+      ships literal "Frequently asked question #1?" / "Placeholder answer…".
+      Write real questions and answers, or hide the section until they exist.
 
 ## 🟡 In progress / owner-supplied
 
