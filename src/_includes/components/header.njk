@@ -17,7 +17,7 @@
     <div class="hidden lg:flex lg:gap-x-10">
       <a href="#services" class="text-lg text-white hover:text-brand-gold transition-colors">Services</a>
       <a href="#portfolio" class="text-lg text-white hover:text-brand-gold transition-colors">Portfolio</a>
-      <a href="#testimonials" class="text-lg text-white hover:text-brand-gold transition-colors">Reviews</a>
+      {% if client.testimonials and client.testimonials.length %}<a href="#testimonials" class="text-lg text-white hover:text-brand-gold transition-colors">Reviews</a>{% endif %}
       <a href="#faq" class="text-lg text-white hover:text-brand-gold transition-colors">FAQ</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
@@ -52,7 +52,7 @@
               <div class="space-y-2 py-6">
                 <a href="#services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Services</a>
                 <a href="#portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Portfolio</a>
-                <a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Reviews</a>
+                {% if client.testimonials and client.testimonials.length %}<a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">Reviews</a>{% endif %}
                 <a href="#faq" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">FAQ</a>
               </div>
               <div class="py-6 space-y-3">

@@ -90,4 +90,46 @@ module.exports = {
       },
     ],
   },
+
+  // Customer testimonials (Reviews section).
+  // IMPORTANT: only add REAL reviews here — never invent quotes or names.
+  // While this array is empty the Reviews section hides itself automatically.
+  // Each entry: { quote, name, location, rating (1-5) }
+  testimonials: [
+    // {
+    //   quote: 'They remodeled our kitchen on time and on budget...',
+    //   name: 'Jane D.',
+    //   location: 'Mount Pleasant, SC',
+    //   rating: 5,
+    // },
+  ],
+
+  // Frequently asked questions (FAQ section). { question, answer }
+  faqs: [
+    {
+      question: 'What areas do you serve?',
+      answer:
+        'We serve Charleston, South Carolina and the surrounding Low Country. If you are nearby and not sure whether you are in our service area, reach out and just ask — we are happy to let you know.',
+    },
+    {
+      question: 'Do you offer free quotes?',
+      answer:
+        'Yes. We provide free, no-obligation quotes on every project. Tell us what you have in mind and we will walk you through the scope, timeline, and pricing before any work begins.',
+    },
+    {
+      question: 'What types of projects do you take on?',
+      answer:
+        'Our focus is kitchen and bathroom remodels, but we also handle handyman work, real estate punch lists, additions, and custom carpentry. Whether it is a single-room update or a larger renovation, we are glad to talk it through.',
+    },
+    {
+      question: 'How long will my remodel take?',
+      answer:
+        'It depends on the size and scope of the work — a small bathroom refresh moves much faster than a full kitchen renovation. We give you a realistic timeline as part of your quote so you know what to expect from start to finish.',
+    },
+    {
+      question: 'How do we get started?',
+      answer:
+        'The first step is a free consultation. Send us a message through the quote form or give us a call, and we will set up a time to discuss your project, look at the space, and put together a detailed quote.',
+    },
+  ],
 }

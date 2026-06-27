@@ -11,9 +11,11 @@
           <li>
               <a href="#portfolio" class="mr-4 hover:underline md:mr-6">Portfolio</a>
           </li>
+          {% if client.testimonials and client.testimonials.length %}
           <li>
               <a href="#testimonials" class="mr-4 hover:underline md:mr-6">Reviews</a>
           </li>
+          {% endif %}
           <li>
               <a href="#faq" class="mr-4 hover:underline md:mr-6">FAQ</a>
           </li>

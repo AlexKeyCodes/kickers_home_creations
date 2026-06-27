@@ -8,12 +8,14 @@ Outstanding work for kickershomecreations.com. Organized by priority.
       `action="#"`, so submissions go nowhere. Connect a backend (Formspree /
       Web3Forms / Netlify Forms) so leads reach `kickerservices@outlook.com`.
       This is currently the only contact path on the site.
-- [ ] **Replace placeholder testimonials** — `src/_includes/components/testimonials.njk`
-      ships literal "Placeholder testimonial…" / "Client Name 1/2/3". Swap in
-      real client quotes and names, or hide the section until they exist.
-- [ ] **Replace placeholder FAQ items** — `src/_includes/components/faq.njk`
-      ships literal "Frequently asked question #1?" / "Placeholder answer…".
-      Write real questions and answers, or hide the section until they exist.
+- [ ] **Add real testimonials** — section is now data-driven from
+      `client.testimonials` in `src/_data/client.js` and hides itself (plus the
+      "Reviews" nav links) while that array is empty. Paste 2-3 real client
+      quotes/names there to bring it back. Never invent reviews.
+- [x] **Replace placeholder FAQ items** — `faq.njk` is now data-driven from
+      `client.faqs`; five real Q&As written (service area, free quotes, project
+      types, timeline, getting started). Add a licensed/insured, warranty, or
+      payment FAQ once those details are confirmed.
 
 ## 🟡 In progress / owner-supplied
 
