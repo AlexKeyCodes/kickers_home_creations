@@ -22,8 +22,8 @@ Outstanding work for kickershomecreations.com. Organized by priority.
 
 - [x] **OG image** — `og_image.png` (1200×630) added and wired into `base.njk`
       (og:image, secure_url, twitter:image + width/height/type/alt tags).
-- [ ] **GA4** — create the property, add the `G-…` measurement ID, and restore
-      an analytics include in `base.njk`.
+- [x] **GA4** — measurement ID `G-31FDLEKWNL` set in `client.gaId`; analytics
+      component restored and included in `base.njk` (renders only when gaId set).
 
 ## 🟢 Local SEO
 

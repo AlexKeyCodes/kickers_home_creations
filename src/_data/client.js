@@ -19,6 +19,9 @@ module.exports = {
   email: 'kickerservices@outlook.com',
   domain: 'https://kickershomecreations.com',
 
+  // Google Analytics 4 measurement ID. Leave empty to disable analytics.
+  gaId: 'G-31FDLEKWNL',
+
   // Business Hours
   hours: {
     schedule: [
