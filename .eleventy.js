@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: "https://www.example.com", // Replace with your client's URL
+      hostname: "https://kickershomecreations.com",
     },
   });
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);

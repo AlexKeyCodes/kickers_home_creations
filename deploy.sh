@@ -1,43 +1,16 @@
 #!/bin/bash
 set -e
 
-# Site folder name on the servers. Edit this once per client.
-SITE_NAME="custom_template"
+# Production server for kickershomecreations.com
+PROD_DEST="deploy@198.251.65.190:/var/www/kickershomecreations.com/_site/"
 
-PROD_DEST="deploy@88restaurants.com:/home/deploy/eight_eight/current/public/sites/${SITE_NAME}"
-PREVIEW_DEST="rg@104.237.128.61:/var/www/preview.88restaurants.com/_site/${SITE_NAME}/"
+read -rp "⚠️  This deploys to the LIVE site (kickershomecreations.com). Continue? [y/N]: " confirm
+[[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 1; }
 
-echo "Where do you want to deploy?"
-echo "  1) Production"
-echo "  2) Preview"
-read -rp "Enter choice [1-2]: " choice
+echo "Building site for production..."
+npm run build
 
-case "$choice" in
-  1)
-    TARGET="$PROD_DEST"
-    ENV="production"
-    read -rp "⚠️  This deploys to the LIVE site. Continue? [y/N]: " confirm
-    [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 1; }
-    ;;
-  2)
-    TARGET="$PREVIEW_DEST"
-    ENV="preview"
-    ;;
-  *)
-    echo "Invalid choice. Aborting."
-    exit 1
-    ;;
-esac
+echo "Deploying to production..."
+rsync -avz --delete dist/ "$PROD_DEST"
 
-echo "Building site for ${ENV}..."
-if [[ "$ENV" == "preview" ]]; then
-  # Preview is served from a /${SITE_NAME}/ subfolder, so build with that prefix.
-  PATH_PREFIX="/${SITE_NAME}/" npm run build:preview
-else
-  npm run build
-fi
-
-echo "Deploying to ${ENV}..."
-rsync -avz --delete dist/ "$TARGET"
-
-echo "Deployment to ${ENV} complete!"
+echo "Deployment complete! → https://kickershomecreations.com"
