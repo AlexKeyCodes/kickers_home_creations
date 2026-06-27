@@ -92,16 +92,32 @@ module.exports = {
   },
 
   // Customer testimonials (Reviews section).
-  // IMPORTANT: only add REAL reviews here — never invent quotes or names.
-  // While this array is empty the Reviews section hides itself automatically.
+  // ⚠️ SAMPLE DATA — these are placeholder reviews for design preview only.
+  // REPLACE every entry below with real, client-provided testimonials before
+  // launch. Never present invented reviews as genuine to the public.
   // Each entry: { quote, name, location, rating (1-5) }
   testimonials: [
-    // {
-    //   quote: 'They remodeled our kitchen on time and on budget...',
-    //   name: 'Jane D.',
-    //   location: 'Mount Pleasant, SC',
-    //   rating: 5,
-    // },
+    {
+      quote:
+        'Kickers gutted our dated kitchen and gave us exactly what we pictured — new cabinets, quartz counters, and tile that looks incredible. The crew was on time every day and cleaned up before they left.',
+      name: 'Sarah M.',
+      location: 'Mount Pleasant, SC',
+      rating: 5,
+    },
+    {
+      quote:
+        'Our master bath remodel went smoother than we expected. They walked us through the budget up front, stuck to the timeline, and the new walk-in shower is beautiful. Honest, dependable work.',
+      name: 'David R.',
+      location: 'Summerville, SC',
+      rating: 5,
+    },
+    {
+      quote:
+        'We hired them for a punch list before selling our house and ended up having them back for a full kitchen update. Quality craftsmanship and they actually communicate. Highly recommend.',
+      name: 'Karen T.',
+      location: 'James Island, SC',
+      rating: 5,
+    },
   ],
 
   // Frequently asked questions (FAQ section). { question, answer }

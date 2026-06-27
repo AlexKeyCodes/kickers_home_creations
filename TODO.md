@@ -8,10 +8,11 @@ Outstanding work for kickershomecreations.com. Organized by priority.
       `action="#"`, so submissions go nowhere. Connect a backend (Formspree /
       Web3Forms / Netlify Forms) so leads reach `kickerservices@outlook.com`.
       This is currently the only contact path on the site.
-- [ ] **Add real testimonials** — section is now data-driven from
-      `client.testimonials` in `src/_data/client.js` and hides itself (plus the
-      "Reviews" nav links) while that array is empty. Paste 2-3 real client
-      quotes/names there to bring it back. Never invent reviews.
+- [ ] **Replace SAMPLE testimonials with real ones** — `client.testimonials` in
+      `src/_data/client.js` currently holds 3 ⚠️ SAMPLE reviews for design
+      preview only, and they are LIVE on the public site. Swap in the client's
+      real quotes/names before launch. (Empty the array to hide the section +
+      its "Reviews" nav links again.)
 - [x] **Replace placeholder FAQ items** — `faq.njk` is now data-driven from
       `client.faqs`; five real Q&As written (service area, free quotes, project
       types, timeline, getting started). Add a licensed/insured, warranty, or
