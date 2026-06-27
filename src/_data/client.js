@@ -1,8 +1,6 @@
 module.exports = {
   // Basic Business Information
   name: 'Kickers Low Country Home Creations',
-  restaurantName: 'Kickers Low Country Home Creations LLC', // Full display name
-  cuisine: 'Home Construction & Remodeling',
 
   // Page Content
   hero_title: 'Kitchen & Bath Remodeling Done Right',
@@ -14,10 +12,8 @@ module.exports = {
 
   // Contact Information
   address: {
-    street: '',
     city: 'Charleston',
     state: 'SC',
-    zip: '',
   },
   phone: '(608) 346-3448',
   email: 'kickerservices@outlook.com',
@@ -32,21 +28,6 @@ module.exports = {
     ],
   },
 
-
-  // Location & Maps
-  googleMapsUrl: 'https://maps.google.com/?q=Charleston+South+Carolina',
-
-  // System Integration IDs
-  id: '1119',
-
-  // Social Media (placeholders for future use)
-  socialMedia: {
-    facebook: '',
-    instagram: '',
-    twitter: '',
-    yelp: '',
-    googleBusiness: '',
-  },
 
   // Services (Services section)
   services: [

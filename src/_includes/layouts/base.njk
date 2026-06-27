@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description }}">
-    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
-    <!-- Social Media Display -->
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="{{ client.name }}"/>
     <meta property="og:title" content="{{ title }}"/>
     <meta property="og:description" content="{{ description }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-    <meta property="og:image" content="/assets/images/hero_image.jpg"/>
-    <meta property="og:image:secure_url" content="/assets/images/hero_image.jpg"/>
+    <meta property="og:image" content="{{ client.domain }}/assets/images/hero_image.jpg"/>
+    <meta property="og:image:secure_url" content="{{ client.domain }}/assets/images/hero_image.jpg"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ client.domain }}/assets/images/hero_image.jpg">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
@@ -40,19 +47,35 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "HomeAndConstructionBusiness",
         "name": "{{ client.name }}",
         "url": "{{ client.domain }}",
         "logo": "{{ client.domain }}/assets/images/kickers-logo-wordmark.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "{{ client.phone }}",
-          "contactType": "Customer Service"
-        }
+        "image": "{{ client.domain }}/assets/images/hero_image.jpg",
+        "description": "Charleston-area kitchen and bathroom remodeling built on quality craftsmanship, honest pricing, and dependable service.",
+        "telephone": "{{ client.phone }}",
+        "email": "{{ client.email }}",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "{{ client.address.city }}",
+          "addressRegion": "{{ client.address.state }}",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Charleston" },
+          { "@type": "AdministrativeArea", "name": "South Carolina Low Country" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "17:00"
+          }
+        ]
       }
     </script>
-
-    {% include "components/google_analytics.njk" %}
 
   </head>
 

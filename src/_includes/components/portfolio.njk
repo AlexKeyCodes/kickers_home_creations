@@ -11,7 +11,7 @@
       {% for step in client.projectSpotlight.steps %}
         <figure class="relative">
           <div class="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
-            <img src="{{ step.image }}" alt="{{ step.stage }} stage of fireplace feature wall by {{ client.restaurantName }}" class="size-full object-cover" />
+            <img src="{{ step.image }}" alt="{{ step.stage }} stage of fireplace feature wall by {{ client.name }}" class="size-full object-cover" />
             <span class="absolute left-4 top-4 flex size-9 items-center justify-center rounded-full bg-brand-gold text-sm font-semibold text-white shadow">{{ loop.index }}</span>
           </div>
 
