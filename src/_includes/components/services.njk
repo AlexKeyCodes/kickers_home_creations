@@ -43,7 +43,10 @@
       <div id="services-carousel" class="relative mx-auto w-full max-w-md lg:max-w-none">
         <div class="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
           {% for image in client.serviceImages %}
-            <img src="{{ image }}" alt="Project by {{ client.name }}" class="services-slide absolute inset-0 size-full object-cover transition-opacity duration-700 ease-in-out {{ 'opacity-100' if loop.first else 'opacity-0' }}" />
+            <picture class="contents">
+              <source srcset="{{ image.webp }}" type="image/webp" />
+              <img src="{{ image.src }}" alt="{{ image.alt }}" loading="{{ 'eager' if loop.first else 'lazy' }}" decoding="async" class="services-slide absolute inset-0 size-full object-cover transition-opacity duration-700 ease-in-out {{ 'opacity-100' if loop.first else 'opacity-0' }}" />
+            </picture>
           {% endfor %}
 
           <!-- Prev / Next -->

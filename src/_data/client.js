@@ -53,18 +53,19 @@ module.exports = {
     },
   ],
 
-  // Images for the Services carousel (vertical/portrait crop)
+  // Images for the Services carousel (vertical/portrait crop).
+  // { src (jpg fallback), webp (preferred), alt }
   serviceImages: [
-    'assets/images/kitchen_island.jpg',
-    'assets/images/kitchen_island2.jpg',
-    'assets/images/full_bath.jpg',
-    'assets/images/full_bath2.jpg',
-    'assets/images/full_bath3.jpg',
-    'assets/images/full_bath4.jpg',
-    'assets/images/bathroom_tub.jpg',
-    'assets/images/bathroom_vanity.jpg',
-    'assets/images/bathroom_tile.jpg',
-    'assets/images/bathroom_tile2.jpg',
+    { src: 'assets/images/kitchen_island.jpg',  webp: 'assets/images/kitchen_island.webp',  alt: 'Remodeled kitchen with a custom island and new cabinetry' },
+    { src: 'assets/images/kitchen_island2.jpg', webp: 'assets/images/kitchen_island2.webp', alt: 'Updated kitchen island with stone countertops' },
+    { src: 'assets/images/full_bath.jpg',       webp: 'assets/images/full_bath.webp',       alt: 'Fully remodeled bathroom with a tiled shower' },
+    { src: 'assets/images/full_bath2.jpg',      webp: 'assets/images/full_bath2.webp',      alt: 'Bathroom renovation with custom tile and a glass shower' },
+    { src: 'assets/images/full_bath3.jpg',      webp: 'assets/images/full_bath3.webp',      alt: 'Renovated bathroom with a walk-in tiled shower' },
+    { src: 'assets/images/full_bath4.jpg',      webp: 'assets/images/full_bath4.webp',      alt: 'Modern bathroom remodel with new fixtures and tile' },
+    { src: 'assets/images/bathroom_tub.jpg',    webp: 'assets/images/bathroom_tub.webp',    alt: 'Bathroom remodel featuring a new soaking tub' },
+    { src: 'assets/images/bathroom_vanity.jpg', webp: 'assets/images/bathroom_vanity.webp', alt: 'New bathroom vanity and fixtures after a remodel' },
+    { src: 'assets/images/bathroom_tile.jpg',   webp: 'assets/images/bathroom_tile.webp',   alt: 'Custom tile work in a remodeled bathroom' },
+    { src: 'assets/images/bathroom_tile2.jpg',  webp: 'assets/images/bathroom_tile2.webp',  alt: 'Detailed shower tile work in a bathroom remodel' },
   ],
 
   // Project progression spotlight (Portfolio section)
@@ -75,16 +76,19 @@ module.exports = {
     steps: [
       {
         image: 'assets/images/living_room1.jpg',
+        webp: 'assets/images/living_room1.webp',
         stage: 'Framing',
         caption: 'Custom built-in framing for the new fireplace and media wall.',
       },
       {
         image: 'assets/images/living_room2.jpg',
+        webp: 'assets/images/living_room2.webp',
         stage: 'Tile Prep',
         caption: 'Backerboard installed and the firebox opening framed out.',
       },
       {
         image: 'assets/images/living_room3.jpg',
+        webp: 'assets/images/living_room3.webp',
         stage: 'Finished',
         caption: 'Floor-to-ceiling marble surround with a linear fireplace and mounted TV.',
       },

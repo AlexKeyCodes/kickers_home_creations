@@ -31,14 +31,15 @@ Outstanding work for kickershomecreations.com. Organized by priority.
 - [ ] **Google Business Profile** — create the listing, then add it to the
       schema `sameAs` array in `base.njk` and link it from the footer. Biggest
       remaining local-ranking lever for a contractor.
-- [ ] **Verify the phone number** — `(608)` is a Wisconsin area code, not
-      Charleston/SC. Confirm `client.phone` in `src/_data/client.js` is correct.
+- [x] **Verify the phone number** — confirmed correct by owner.
 
 ## 🔵 Polish
 
-- [ ] Fix dead `href="#"` logo links in `header.njk` / `footer.njk` → point to `/`.
-- [ ] Brand the favicon theme colors (still template defaults: `#da532c` tile
-      color, generic Safari pinned-tab).
-- [ ] Improve generic image alt text (currently "Project by …").
-- [ ] Serve WebP + lazy-load below-fold images for extra speed.
-- [ ] Custom 404 page.
+- [x] Fix dead `href="#"` logo links in `header.njk` / `footer.njk` → now `/`.
+- [x] New favicon — 🛠️ emoji on a brand-green SVG tile (`favicons/favicon.svg`),
+      `theme-color`/tile color set to brand green `#15514A`.
+- [x] Improve image alt text — services carousel now has descriptive,
+      per-image alt via `client.serviceImages` objects.
+- [x] Serve WebP + lazy-load — all photos have `.webp` (jpg fallback via
+      `<picture>`); below-fold images `loading="lazy"`, hero `fetchpriority="high"`.
+- ~~Custom 404 page~~ — not needed for a static site (owner decision).

@@ -1,5 +1,8 @@
 <section id="hero" class="relative isolate overflow-hidden flex items-center min-h-[75vh] pt-20 lg:pt-[5.5rem]">
-  <img src="assets/images/hero_image.jpg" alt="Recently completed home by {{ client.name }}" class="absolute inset-0 -z-10 size-full object-cover" />
+  <picture class="contents">
+    <source srcset="assets/images/hero_image.webp" type="image/webp" />
+    <img src="assets/images/hero_image.jpg" alt="Recently completed home by {{ client.name }}" fetchpriority="high" decoding="async" class="absolute inset-0 -z-10 size-full object-cover" />
+  </picture>
   <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/80 via-black/60 to-black/70"></div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8 py-16">
     <div class="mx-auto max-w-3xl text-center">

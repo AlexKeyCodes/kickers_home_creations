@@ -8,6 +8,7 @@ read -rp "⚠️  This deploys to the LIVE site (kickershomecreations.com). Cont
 [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 1; }
 
 echo "Building site for production..."
+rm -rf dist   # start clean so stale artifacts never ship via rsync --delete
 npm run build
 
 echo "Deploying to production..."
