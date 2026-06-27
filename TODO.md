@@ -20,9 +20,8 @@ Outstanding work for kickershomecreations.com. Organized by priority.
 
 ## 🟡 In progress / owner-supplied
 
-- [ ] **OG image** — create a 1200×630 image, add to `src/assets/images/`, and
-      update the 3 image paths in `src/_includes/layouts/base.njk` (currently
-      pointing at `hero_image.jpg`).
+- [x] **OG image** — `og_image.png` (1200×630) added and wired into `base.njk`
+      (og:image, secure_url, twitter:image + width/height/type/alt tags).
 - [ ] **GA4** — create the property, add the `G-…` measurement ID, and restore
       an analytics include in `base.njk`.
 
