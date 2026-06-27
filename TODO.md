@@ -1,0 +1,38 @@
+# TODO
+
+Outstanding work for kickershomecreations.com. Organized by priority.
+
+## 🔴 Launch blockers
+
+- [ ] **Wire up the quote form** — `src/_includes/components/quote.njk` has
+      `action="#"`, so submissions go nowhere. Connect a backend (Formspree /
+      Web3Forms / Netlify Forms) so leads reach `kickerservices@outlook.com`.
+      This is currently the only contact path on the site.
+- [ ] **Replace placeholder testimonials** — `src/_includes/components/testimonials.njk`
+      ships literal "Placeholder testimonial…" / "Client Name 1/2/3". Swap in
+      real client quotes and names, or hide the section until they exist.
+
+## 🟡 In progress / owner-supplied
+
+- [ ] **OG image** — create a 1200×630 image, add to `src/assets/images/`, and
+      update the 3 image paths in `src/_includes/layouts/base.njk` (currently
+      pointing at `hero_image.jpg`).
+- [ ] **GA4** — create the property, add the `G-…` measurement ID, and restore
+      an analytics include in `base.njk`.
+
+## 🟢 Local SEO
+
+- [ ] **Google Business Profile** — create the listing, then add it to the
+      schema `sameAs` array in `base.njk` and link it from the footer. Biggest
+      remaining local-ranking lever for a contractor.
+- [ ] **Verify the phone number** — `(608)` is a Wisconsin area code, not
+      Charleston/SC. Confirm `client.phone` in `src/_data/client.js` is correct.
+
+## 🔵 Polish
+
+- [ ] Fix dead `href="#"` logo links in `header.njk` / `footer.njk` → point to `/`.
+- [ ] Brand the favicon theme colors (still template defaults: `#da532c` tile
+      color, generic Safari pinned-tab).
+- [ ] Improve generic image alt text (currently "Project by …").
+- [ ] Serve WebP + lazy-load below-fold images for extra speed.
+- [ ] Custom 404 page.
